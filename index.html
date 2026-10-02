@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Apex Pen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body text-gray-800 bg-gray-50 leading-relaxed">
+
+    <!-- Header Section -->
+    <header id="header" class="animate-header bg-gray-950 text-white py-5 flex justify-around items-center sticky top-0 z-50 transition-all duration-300">
+        <div class="logo-text text-2xl font-bold tracking-widest transition-colors duration-300 cursor-pointer">Apex Pen</div>
+        <nav>
+            <ul class="flex gap-5 list-none">
+                <li class="nav-stagger-1"><a href="#home" class="nav-link relative text-white py-1 px-2.5 transition-colors duration-300 hover:text-gold">Home</a></li>
+                <li class="nav-stagger-2"><a href="#about" class="nav-link relative text-white py-1 px-2.5 transition-colors duration-300 hover:text-gold">About</a></li>
+                <li class="nav-stagger-3"><a href="#features" class="nav-link relative text-white py-1 px-2.5 transition-colors duration-300 hover:text-gold">Features</a></li>
+                <li class="nav-stagger-4"><a href="#contact" class="nav-link relative text-white py-1 px-2.5 transition-colors duration-300 hover:text-gold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex justify-center items-center text-center text-white px-5">
+        <div>
+            <h1 class="animate-hero-1 font-heading text-7xl mb-3 tracking-wide max-md:text-5xl">The Apex Pen</h1>
+            <p class="animate-hero-2 text-2xl mb-8">Experience the ultimate frictionless writing journey.</p>
+            <a href="#contact" class="animate-hero-3 btn-gold inline-block bg-gold text-gray-950 py-4 px-8 text-lg font-bold rounded-md transition-all duration-300 hover:bg-gold-dark hover:scale-105">Pre-Order Now</a>
+        </div>
+    </section>
+
+    <!-- About/Introduction Section -->
+    <section id="about" class="bg-white py-20">
+        <div class="max-w-[1100px] mx-auto px-5">
+            <h2 class="reveal font-heading text-4xl text-center mb-10 text-gray-900">About The Apex Pen</h2>
+            <div class="flex items-center gap-10 max-md:flex-col">
+                <div class="reveal-left flex-1 text-lg">
+                    <p class="mb-5">Designed for creators, visionaries, and professionals, the Apex Pen is more than just a writing instrument—it is an extension of your thoughts. Forged from aerospace-grade titanium and precision-engineered to provide flawless ink flow, the Apex Pen guarantees that every stroke is smooth, effortless, and bold.</p>
+                    <p>Whether you are drafting your next novel, sketching architectural plans, or signing important documents, our pen provides the perfect balance of weight and ergonomics.</p>
+                </div>
+                <div class="reveal-right flex-1">
+                    <img src="apex_pen_hero.jpg" alt="Apex Pen on a notebook" class="w-full rounded-lg shadow-lg transition-transform duration-500 hover:scale-[1.03]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section (Features/Benefits) -->
+    <section id="features" class="bg-gray-100 py-20">
+        <div class="max-w-[1100px] mx-auto px-5">
+            <h2 class="reveal font-heading text-4xl text-center mb-10 text-gray-900">Why Choose Apex?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="feature-card reveal bg-white p-8 rounded-lg shadow-sm text-center border-t-4 border-gold transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(212,175,55,0.15)] hover:border-gold-dark">
+                    <h3 class="font-heading mb-4 text-gray-950 text-xl">Aerospace Titanium</h3>
+                    <p>Incredibly durable yet remarkably light, providing a perfect center of gravity.</p>
+                </div>
+                <div class="feature-card reveal bg-white p-8 rounded-lg shadow-sm text-center border-t-4 border-gold transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(212,175,55,0.15)] hover:border-gold-dark">
+                    <h3 class="font-heading mb-4 text-gray-950 text-xl">Frictionless Nib</h3>
+                    <p>Our custom-engineered nib glides across paper without skipping or scratching.</p>
+                </div>
+                <div class="feature-card reveal bg-white p-8 rounded-lg shadow-sm text-center border-t-4 border-gold transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(212,175,55,0.15)] hover:border-gold-dark">
+                    <h3 class="font-heading mb-4 text-gray-950 text-xl">Lifetime Warranty</h3>
+                    <p>We stand by our craftsmanship. The Apex Pen is guaranteed for a lifetime of use.</p>
+                </div>
+            </div>
+
+            <div class="reveal flex items-center gap-10 bg-white p-8 rounded-lg shadow-lg max-md:flex-col">
+                <img src="apex_pen_nib.jpg" alt="Close up of the Apex Pen Nib" class="w-1/2 max-md:w-full rounded-lg transition-transform duration-500 hover:scale-[1.03]">
+                <div>
+                    <h3 class="font-heading text-3xl mb-5 text-gray-950">Precision in Every Stroke</h3>
+                    <p>The nib is the heart of the Apex Pen. Crafted with a proprietary alloy, it adapts to your writing pressure, offering a tailored writing experience that only gets better with time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Information Section -->
+    <section id="contact" class="bg-white py-20">
+        <div class="max-w-[1100px] mx-auto px-5">
+            <h2 class="reveal font-heading text-4xl text-center mb-10 text-gray-900">Get In Touch</h2>
+            <div class="reveal max-w-xl mx-auto bg-gray-950 text-white p-10 rounded-lg text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(212,175,55,0.2)]">
+                <p class="mb-4 text-lg"><strong>Location:</strong> 123 Innovation Drive, Tech Valley, CA 94000</p>
+                <p class="mb-4 text-lg"><strong>Email:</strong> support@apexpen.com</p>
+                <p class="mb-4 text-lg"><strong>Phone:</strong> (555) 123-4567</p>
+                <p class="mb-4 text-lg"><strong>Operating Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (PST)</p>
+                <p class="text-lg"><strong>Social Media:</strong> @TheApexPen on Instagram & Twitter</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-950 text-gray-400 text-center py-8 border-t border-gray-700">
+        <p class="mb-1">&copy; 2026 The Apex Pen. All rights reserved.</p>
+        <p>Crafted for the modern visionary.</p>
+    </footer>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+
+            reveals.forEach(el => observer.observe(el));
+
+            // Header shrink on scroll
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
